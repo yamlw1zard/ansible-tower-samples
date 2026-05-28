@@ -1,0 +1,10 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+
+    - name: Force fail
+      fail:
+        msg: "Playbook intentionally failed"
